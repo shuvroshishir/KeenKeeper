@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container mx-auto px-4 pt-20 pb-7.5 text-center">
 
                 <h2 className="text-4xl sm:text-6xl font-bold mb-4">
-                    Keen<span className="text-gray-300">Keeper</span>
+                    Keen<span className="text-gray-300 font-medium">Keeper</span>
                 </h2>
 
                 <p className="text-sm text-gray-300 mb-6">

@@ -11,7 +11,7 @@ const Root = () => {
             <header>
                 <NavBar />
             </header>
-            <main className='min-h-[50vh] bg-[#F8FAFC]'>
+            <main className='min-h-[50vh] bg-[#F8FAFC] py-10 md:py-20'>
                 <Outlet />
             </main>
             <footer>

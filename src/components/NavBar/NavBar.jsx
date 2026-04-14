@@ -14,7 +14,7 @@ const NavBar = () => {
                     <span className='text-(--primary-color) font-semibold'>Keeper</span>
                 </Link>
 
-                <div className="nav-right flex items-center bg-gray-100 p-0.5 rounded-sm w-fit font-semibold">
+                <div className="nav-right flex items-center bg-[#F8FAFC] p-0.5 rounded-sm w-fit font-semibold">
                     <NavLink to={'/'} className={({ isActive }) => `${isActive ? 'bg-(--primary-color) text-white font-bold' : ''} rounded-sm  py-2.5 px-3 flex items-center gap-1      hover:brightness-140  transition-all duration-200 ease-in-out`}>
                         <RiHome2Line />
                         <p className='hidden sm:block'>Home</p>

@@ -1,20 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { IoIosArrowBack } from "react-icons/io";
 
 const ErrorPage = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center px-4 bg-[#F9FAFC]">
+        <div className="min-h-screen flex items-center justify-center px-4 bg-[#F8FAFC]">
 
-            <div className="container mx-auto bg-white rounded-2xl shadow-sm p-8 md:p-12 flex flex-col md:flex-row items-center gap-10">
+            <div className="container mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-20 flex flex-col md:flex-row items-center gap-10">
+                <div className="flex-1 text-center md:text-left text-(--primary-color)">
 
-                {/* Left Content */}
-                <div className="flex-1 text-center md:text-left">
-
-                    <h1 className="text-6xl md:text-7xl font-bold text-gray-800 mb-4">
+                    <h1 className="text-6xl md:text-7xl font-bold mb-4">
                         404
                     </h1>
 
-                    <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-3">
+                    <h2 className="text-2xl md:text-3xl font-semibold mb-3">
                         Page not found
                     </h2>
 
@@ -25,17 +24,17 @@ const ErrorPage = () => {
 
                     <Link
                         to="/"
-                        className="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300"
+                        className=" w-fit bg-(--primary-color) text-white px-6 py-3 rounded-lg font-medium hover:scale-105 transition duration-200 flex items-center gap-1"
                     >
+                        <IoIosArrowBack />
                         Back to Home
                     </Link>
 
                 </div>
 
-                {/* Right Image */}
                 <div className="flex-1">
                     <img
-                        src="https://cdn-icons-png.flaticon.com/512/6195/6195678.png"
+                        src="/404.svg"
                         alt="Error Illustration"
                         className="w-full max-w-sm mx-auto"
                     />
