@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router';
 import { ToastContainer } from 'react-toastify';
 import NavBar from '../components/NavBar/NavBar';
+import Footer from '../components/footer/Footer';
 
 
 const Root = () => {
@@ -10,11 +11,11 @@ const Root = () => {
             <header>
                 <NavBar />
             </header>
-            <main>
+            <main className='min-h-[50vh]'>
                 <Outlet />
             </main>
             <footer>
-                foot
+                <Footer />
             </footer>
             <ToastContainer />
         </>

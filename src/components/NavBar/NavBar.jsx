@@ -8,7 +8,7 @@ const NavBar = () => {
 
     return (
         <nav className='bg-white shadow-sm'>
-            <div className='nav-section max-w-[90%] mx-auto flex justify-between items-center py-4.5'>
+            <div className='nav-section max-w-[90%] mx-auto flex justify-between items-center py-4'>
 
                 <Link to={'/'} className='text-(--secondary-color) text-lg sm:text-2xl font-extrabold'>Keen
                     <span className='text-(--primary-color) font-semibold'>Keeper</span>
