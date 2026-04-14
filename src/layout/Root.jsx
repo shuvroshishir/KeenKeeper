@@ -11,7 +11,7 @@ const Root = () => {
             <header>
                 <NavBar />
             </header>
-            <main className='min-h-[50vh]'>
+            <main className='min-h-[50vh] bg-[#F8FAFC]'>
                 <Outlet />
             </main>
             <footer>
@@ -24,4 +24,4 @@ const Root = () => {
 
 export default Root;
 
-//HoverEffect: hover:brightness-140 hover:shadow-md hover:scale-105 transition-all duration-300 ease-in-out 
+//HoverEffect: hover:brightness-140 hover:shadow-md hover:scale-105 transition-all duration-200 ease-in-out 
