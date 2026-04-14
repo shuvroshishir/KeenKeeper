@@ -1,2 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
 @import "tailwindcss";
 @plugin "daisyui";
+
+:root {
+    --primary-color: #244D3F;
+    --secondary-color: #1F2937;
+}
+
+body {
+    font-family: "Geist", sans-serif;
+}
+
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
