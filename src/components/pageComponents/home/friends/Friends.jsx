@@ -1,23 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { FriendsContext } from '../../../../context/FriendsContext';
 import { Md5G } from 'react-icons/md';
 import { HashLoader } from "react-spinners";
 import FriendCard from './friendCard/FriendCard';
+import useFriends from '../../../../hooks/useFriends';
 
 
 const Friends = () => {
-    const [friends, setFriends] = useState([]);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const res = await fetch('/friends.json');
-            const data = await res.json();
-            setFriends(data);
-            setLoading(false)
-        }
-        fetchData();
-    }, [])
+    const { friends, loading } = useFriends();
 
     return (
         <div className='Friends-section min-h-screen'>

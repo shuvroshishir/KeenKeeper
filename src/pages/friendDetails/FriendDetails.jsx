@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router';
 import { HashLoader } from "react-spinners";
 import FriendDetailsCard from '../../components/pageComponents/friendDetails/FriendDetailsCard';
 import { Link } from 'react-router';
 import { IoIosArrowBack } from "react-icons/io";
+import useFriends from '../../hooks/useFriends';
 
 const FriendDetails = () => {
 
@@ -11,18 +12,7 @@ const FriendDetails = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    const [friends, setFriends] = useState([]);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const res = await fetch('/friends.json');
-            const data = await res.json();
-            setFriends(data);
-            setLoading(false)
-        }
-        fetchData();
-    }, [])
+    const { friends, loading } = useFriends();
 
     const { friendId } = useParams();
 

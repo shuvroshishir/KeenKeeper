@@ -1,10 +1,8 @@
-import React, { use } from 'react';
-
-
-const friendsPromise = fetch('/friends.json').then(res => res.json())
+import React from 'react';
+import useFriends from '../../../../hooks/useFriends';
 
 const Dashboard = () => {
-    const friends = use(friendsPromise);
+    const { friends } = useFriends();
 
     return (
         <div className="Dashboard-section grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 py-10">

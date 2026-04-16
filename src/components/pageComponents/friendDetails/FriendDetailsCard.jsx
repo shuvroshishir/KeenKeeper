@@ -104,13 +104,13 @@ const FriendDetailsCard = ({ friend }) => {
                     <h3 className="mb-4 font-medium text-xl text-(--primary-color)">Quick Check-In</h3>
 
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-(--secondary-color)">
-                        <button className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:shadow-md hover:bg-gray-100 flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
+                        <button className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:shadow-md hover:bg-gray-200 hover:text-(--primary-color) flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
                             <PiPhoneCallBold size={32} />Call
                         </button>
-                        <button className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:shadow-md hover:bg-gray-100 flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
+                        <button className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:shadow-md hover:bg-gray-200 hover:text-(--primary-color) flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
                             <MdOutlineTextsms size={32} />Text
                         </button>
-                        <button className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:shadow-md hover:bg-gray-100 flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
+                        <button className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:shadow-md hover:bg-gray-200 hover:text-(--primary-color) flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
                             <FiVideo size={32} />Video
                         </button>
                     </div>
