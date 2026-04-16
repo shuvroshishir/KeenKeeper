@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router';
-import { ToastContainer } from 'react-toastify';
+import { Slide, ToastContainer } from 'react-toastify';
 import NavBar from '../components/NavBar/NavBar';
 import Footer from '../components/footer/Footer';
 
@@ -17,7 +17,19 @@ const Root = () => {
             <footer>
                 <Footer />
             </footer>
-            <ToastContainer />
+            <ToastContainer
+                position="top-center"
+                autoClose={2000}
+                hideProgressBar={true}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover={false}
+                theme="light"
+                transition={Slide}
+            />
         </>
     );
 };

@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FriendsContext } from './FriendsContext';
 
 const FriendsProvider = ({ children }) => {
-    const msg = 'hi shishir'
-    const data = {
-        msg,
+    const [timeline, setTimeline] = useState([])
+
+    const addToTimeline = (type, friendName) => {
+        const newData = {
+            type,
+            name: friendName,
+            date: new Date().toLocaleString("en-US", {
+                dateStyle: "long",
+                timeStyle: "short"
+            })
+        }
+        setTimeline([newData, ...timeline]);
     }
+
+
+    const data = { timeline, addToTimeline }
 
     return (
         <FriendsContext.Provider value={data}>

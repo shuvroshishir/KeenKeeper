@@ -1,15 +1,34 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { RiNotificationSnoozeLine } from "react-icons/ri";
 import { FiArchive } from "react-icons/fi";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { PiPhoneCallBold } from "react-icons/pi";
 import { MdOutlineTextsms } from "react-icons/md";
 import { FiVideo } from "react-icons/fi";
+import { toast } from 'react-toastify';
+import { FriendsContext } from '../../../context/FriendsContext';
 
 const FriendDetailsCard = ({ friend }) => {
 
     const { name, picture, email, days_since_contact, status, tags, bio, goal, next_due_date } = friend;
 
+    // context api
+    const { addToTimeline } = useContext(FriendsContext);
+
+    const handleCall = () => {
+        toast.success(`Call with ${name}`);
+        addToTimeline("call", name);
+    }
+
+    const handleText = () => {
+        toast.success(`Text with ${name}`);
+        addToTimeline("text", name);
+    }
+
+    const handleVideo = () => {
+        toast.success(`Video with ${name}`);
+        addToTimeline("video", name);
+    }
 
     return (
 
@@ -104,13 +123,25 @@ const FriendDetailsCard = ({ friend }) => {
                     <h3 className="mb-4 font-medium text-xl text-(--primary-color)">Quick Check-In</h3>
 
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-(--secondary-color)">
-                        <button className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:shadow-md hover:bg-gray-200 hover:text-(--primary-color) flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
+
+                        {/* call btn */}
+                        <button
+                            onClick={handleCall}
+                            className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:shadow-md hover:bg-gray-200 hover:text-(--primary-color) flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
                             <PiPhoneCallBold size={32} />Call
                         </button>
-                        <button className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:shadow-md hover:bg-gray-200 hover:text-(--primary-color) flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
+
+                        {/* text btn*/}
+                        <button
+                            onClick={handleText}
+                            className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:shadow-md hover:bg-gray-200 hover:text-(--primary-color) flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
                             <MdOutlineTextsms size={32} />Text
                         </button>
-                        <button className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:shadow-md hover:bg-gray-200 hover:text-(--primary-color) flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
+
+                        {/* video btn*/}
+                        <button
+                            onClick={handleVideo}
+                            className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:shadow-md hover:bg-gray-200 hover:text-(--primary-color) flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
                             <FiVideo size={32} />Video
                         </button>
                     </div>

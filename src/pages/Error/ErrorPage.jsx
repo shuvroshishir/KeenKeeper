@@ -27,7 +27,7 @@ const ErrorPage = () => {
                         className=" w-fit bg-(--primary-color) text-white px-6 py-3 rounded-lg font-medium hover:scale-105 transition duration-200 flex items-center gap-1"
                     >
                         <IoIosArrowBack />
-                        Back to Home
+                        Go Back to Home
                     </Link>
 
                 </div>
