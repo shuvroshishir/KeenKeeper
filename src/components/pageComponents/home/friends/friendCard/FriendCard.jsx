@@ -7,7 +7,7 @@ const FriendCard = ({ friend }) => {
 
     return (
         <div
-            onClick={() => navigate(`/book-details/${id}`)}
+            onClick={() => navigate(`/friend-details/${id}`)}
             className="Friend-card bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-md hover:scale-103 transition-all duration-200 ease-in-out">
 
             <div className="flex justify-center mb-4">
@@ -18,7 +18,7 @@ const FriendCard = ({ friend }) => {
                 />
             </div>
 
-            <h2 className="text-lg font-semibold text-gray-800">
+            <h2 className="text-lg font-semibold text-(--secondary-color)">
                 {name}
             </h2>
 

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Arafat Hossain",
-        "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+        "picture": "https://randomuser.me/api/portraits/men/19.jpg",
         "email": "arafat.hossain@gmail.com",
         "days_since_contact": 18,
         "status": "overdue",
@@ -120,7 +120,7 @@
     {
         "id": 9,
         "name": "Imran Khan",
-        "picture": "https://randomuser.me/api/portraits/men/19.jpg",
+        "picture": "https://randomuser.me/api/portraits/men/11.jpg",
         "email": "imran.khan@gmail.com",
         "days_since_contact": 2,
         "status": "on-track",

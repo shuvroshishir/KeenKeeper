@@ -20,15 +20,15 @@ const Footer = () => {
                     <h3 className="mb-3 font-medium text-white">Social Links</h3>
 
                     <div className="flex justify-center gap-4">
-                        <a className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-black text-center hover:scale-105  duration-200  transition-all">
+                        <a className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-black text-center hover:bg-gray-300">
                             <TbBrandInstagramFilled size={20} />
                         </a>
 
-                        <a className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-black text-center hover:scale-105  duration-200  transition-all">
+                        <a className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-black text-center hover:bg-gray-300">
                             <FaFacebookSquare size={20} />
                         </a>
 
-                        <a className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-black text-center hover:scale-105  duration-200  transition-all">
+                        <a className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-black text-center hover:bg-gray-300">
                             <FaXTwitter size={20} />
                         </a>
                     </div>

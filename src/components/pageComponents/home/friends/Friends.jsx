@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { FriendsContext } from '../../../../context/FriendsContext';
 import { Md5G } from 'react-icons/md';
 import { HashLoader } from "react-spinners";
-import FriendCard from '../../../cards/friendCard/FriendCard';
+import FriendCard from './friendCard/FriendCard';
+
 
 const Friends = () => {
     const [friends, setFriends] = useState([]);

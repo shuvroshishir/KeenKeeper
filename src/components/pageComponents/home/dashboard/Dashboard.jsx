@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { use } from 'react';
+
+
+const friendsPromise = fetch('/friends.json').then(res => res.json())
 
 const Dashboard = () => {
+    const friends = use(friendsPromise);
+
     return (
         <div className="Dashboard-section grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 py-10">
 
             <div className="bg-white rounded-xl shadow-sm p-6 hover:shadow-md hover:scale-103 transition-all duration-200 ease-in-out">
-                <h2 className="text-3xl font-bold text-(--primary-color)">10</h2>
+                <h2 className="text-3xl font-bold text-(--primary-color)">{friends.length}</h2>
                 <p className="text-gray-500 mt-2">Total Friends</p>
             </div>
 
