@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Arafat Hossain",
-        "picture": "https://randomuser.me/api/portraits/men/19.jpg",
+        "picture": "/friends-photos/1.jpg",
         "email": "arafat.hossain@gmail.com",
         "days_since_contact": 18,
         "status": "overdue",
@@ -17,7 +17,7 @@
     {
         "id": 2,
         "name": "Nusrat Jahan",
-        "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+        "picture": "/friends-photos/2.jpg",
         "email": "nusrat.jahan@gmail.com",
         "days_since_contact": 10,
         "status": "almost due",
@@ -32,7 +32,7 @@
     {
         "id": 3,
         "name": "Tanvir Ahmed",
-        "picture": "https://randomuser.me/api/portraits/men/13.jpg",
+        "picture": "/friends-photos/3.jpg",
         "email": "tanvir.ahmed@gmail.com",
         "days_since_contact": 5,
         "status": "on-track",
@@ -47,7 +47,7 @@
     {
         "id": 4,
         "name": "Sadia Rahman",
-        "picture": "https://randomuser.me/api/portraits/women/14.jpg",
+        "picture": "/friends-photos/4.jpg",
         "email": "sadia.rahman@gmail.com",
         "days_since_contact": 20,
         "status": "overdue",
@@ -62,7 +62,7 @@
     {
         "id": 5,
         "name": "Rakib Hasan",
-        "picture": "https://randomuser.me/api/portraits/men/15.jpg",
+        "picture": "/friends-photos/5.jpg",
         "email": "rakib.hasan@gmail.com",
         "days_since_contact": 12,
         "status": "almost due",
@@ -77,7 +77,7 @@
     {
         "id": 6,
         "name": "Mithila Akter",
-        "picture": "https://randomuser.me/api/portraits/women/16.jpg",
+        "picture": "/friends-photos/6.jpg",
         "email": "mithila.akter@gmail.com",
         "days_since_contact": 3,
         "status": "on-track",
@@ -91,7 +91,7 @@
     {
         "id": 7,
         "name": "Shakib Al Hasan",
-        "picture": "https://randomuser.me/api/portraits/men/17.jpg",
+        "picture": "/friends-photos/7.jpg",
         "email": "shakib.alhasan@gmail.com",
         "days_since_contact": 16,
         "status": "overdue",
@@ -106,7 +106,7 @@
     {
         "id": 8,
         "name": "Farzana Kabir",
-        "picture": "https://randomuser.me/api/portraits/women/18.jpg",
+        "picture": "/friends-photos/8.jpg",
         "email": "farzana.kabir@gmail.com",
         "days_since_contact": 9,
         "status": "almost due",
@@ -120,7 +120,7 @@
     {
         "id": 9,
         "name": "Imran Khan",
-        "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+        "picture": "/friends-photos/9.jpg",
         "email": "imran.khan@gmail.com",
         "days_since_contact": 2,
         "status": "on-track",
@@ -135,7 +135,7 @@
     {
         "id": 10,
         "name": "Tasnim Chowdhury",
-        "picture": "https://randomuser.me/api/portraits/women/20.jpg",
+        "picture": "/friends-photos/10.jpg",
         "email": "tasnim.chowdhury@gmail.com",
         "days_since_contact": 22,
         "status": "overdue",
@@ -149,7 +149,7 @@
     {
         "id": 11,
         "name": "Mehedi Hasan",
-        "picture": "https://randomuser.me/api/portraits/men/21.jpg",
+        "picture": "/friends-photos/11.jpg",
         "email": "mehedi.hasan@gmail.com",
         "days_since_contact": 11,
         "status": "almost due",
@@ -164,7 +164,7 @@
     {
         "id": 12,
         "name": "Jannatul Ferdous",
-        "picture": "https://randomuser.me/api/portraits/women/22.jpg",
+        "picture": "/friends-photos/12.jpg",
         "email": "jannatul.ferdous@gmail.com",
         "days_since_contact": 4,
         "status": "on-track",

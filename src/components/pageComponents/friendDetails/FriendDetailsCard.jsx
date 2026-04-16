@@ -17,11 +17,15 @@ const FriendDetailsCard = ({ friend }) => {
 
             <div className="card-left">
                 <div className="bg-white shadow rounded-lg px-12 py-6 flex flex-col items-center hover:shadow-md hover:scale-101 transition-all duration-100 ease-in-out">
-                    <img src={picture}
-                        alt={name}
-                        className="w-20 h-20 rounded-full mb-2" />
+                    <div className="flex justify-center">
+                        <img
+                            src={picture}
+                            alt={name}
+                            className="w-20 h-20 rounded-full object-cover"
+                        />
+                    </div>
 
-                    <h2 className="font-semibold text-xl mt-3 mb-2">{name}</h2>
+                    <h2 className="font-semibold text-xl mt-4 mb-2">{name}</h2>
 
 
                     <span
@@ -100,13 +104,13 @@ const FriendDetailsCard = ({ friend }) => {
                     <h3 className="mb-4 font-medium text-xl text-(--primary-color)">Quick Check-In</h3>
 
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-(--secondary-color)">
-                        <button className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:bg-gray-100 flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
+                        <button className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:shadow-md hover:bg-gray-100 flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
                             <PiPhoneCallBold size={32} />Call
                         </button>
-                        <button className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:bg-gray-100 flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
+                        <button className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:shadow-md hover:bg-gray-100 flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
                             <MdOutlineTextsms size={32} />Text
                         </button>
-                        <button className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:bg-gray-100 flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
+                        <button className="text-lg shadow p-4 rounded-lg bg-gray-50 hover:shadow-md hover:bg-gray-100 flex flex-row sm:flex-col gap-2 justify-center items-center cursor-pointer">
                             <FiVideo size={32} />Video
                         </button>
                     </div>
