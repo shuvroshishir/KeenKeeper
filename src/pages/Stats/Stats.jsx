@@ -1,8 +1,10 @@
-import React, { useContext } from 'react';
+import React, { lazy, Suspense, useContext } from 'react';
 import { FriendsContext } from '../../context/FriendsContext';
-import StatsChart from '../../components/pageComponents/stats/StatsChart';
 import NoStats from '../../components/pageComponents/stats/NoStats';
+import { HashLoader } from 'react-spinners';
 
+
+const StatsChart = lazy(() => import('../../components/pageComponents/stats/StatsChart'))
 
 const Stats = () => {
     const { timeline } = useContext(FriendsContext);
@@ -27,11 +29,17 @@ const Stats = () => {
                         isEmpty ?
                             <NoStats />
                             :
-                            <StatsChart
-                                callCount={callCount}
-                                textCount={textCount}
-                                videoCount={videoCount}
-                            />
+                            <Suspense fallback={
+                                <div className="flex justify-center items-center min-h-[50vh]">
+                                    <HashLoader color="#244D3F" />
+                                </div>}
+                            >
+                                <StatsChart
+                                    callCount={callCount}
+                                    textCount={textCount}
+                                    videoCount={videoCount}
+                                />
+                            </Suspense>
                     }
                 </div>
             </div>
