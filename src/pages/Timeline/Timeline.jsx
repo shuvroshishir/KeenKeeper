@@ -38,6 +38,7 @@ const Timeline = () => {
         <section className='Timeline-section container mx-auto space-y-6'>
             <h2 className='text-(--secondary-color) text-5xl font-bold'>Timeline </h2>
 
+            {/* tool bar */}
             <div className='flex justify-between items-center gap-1'>
 
                 {/* search */}
