@@ -11,7 +11,6 @@ const Timeline = () => {
     const [sort, setSort] = useState("latest");
     const [search, setSearch] = useState("");
 
-    console.log(timeline);
 
     // filter functionality
     let processedTimeline =

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { FriendsContext } from './FriendsContext';
+import { getTimelineFromLocalDB, addNewItemIntoLocalDB } from '../utils/localDB'
 
 const FriendsProvider = ({ children }) => {
-    const [timeline, setTimeline] = useState([])
+    const [timeline, setTimeline] = useState(() => getTimelineFromLocalDB())
 
     const addToTimeline = (type, friendName, friendPicture) => {
         const newData = {
@@ -13,11 +14,13 @@ const FriendsProvider = ({ children }) => {
             date: new Date().toISOString()
         }
         setTimeline([newData, ...timeline]);
+        addNewItemIntoLocalDB(newData);
     }
 
     const deleteFromTimeline = (id) => {
         const updatedTimeline = timeline.filter(t => t.id !== id);
         setTimeline(updatedTimeline);
+        localStorage.setItem('timeline', JSON.stringify(updatedTimeline));
     }
 
 
