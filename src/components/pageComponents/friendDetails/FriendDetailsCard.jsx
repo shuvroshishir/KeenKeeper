@@ -17,17 +17,17 @@ const FriendDetailsCard = ({ friend }) => {
 
     const handleCall = () => {
         toast.success(`Call with ${name}`);
-        addToTimeline("call", name);
+        addToTimeline("call", name, picture);
     }
 
     const handleText = () => {
         toast.success(`Text with ${name}`);
-        addToTimeline("text", name);
+        addToTimeline("text", name, picture);
     }
 
     const handleVideo = () => {
         toast.success(`Video with ${name}`);
-        addToTimeline("video", name);
+        addToTimeline("video", name, picture);
     }
 
     return (
