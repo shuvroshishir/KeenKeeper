@@ -8,10 +8,7 @@ const FriendsProvider = ({ children }) => {
         const newData = {
             type,
             name: friendName,
-            date: new Date().toLocaleString("en-US", {
-                dateStyle: "long",
-                timeStyle: "short"
-            })
+            date: new Date().toISOString()
         }
         setTimeline([newData, ...timeline]);
     }

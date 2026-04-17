@@ -11,8 +11,11 @@ const TimelineCard = ({ data }) => {
                 <img src={type === 'call' ? callImg : type === 'text' ? textImg : videoImg} alt="" />
             </div>
             <div className='text-(--para-color)'>
-                <h2 className='text-lg'><span className='text-(--primary-color) text-xl font-medium capitalize'>{type}</span> with {name}</h2>
-                <p>{date}</p>
+                <h2 className='sm:text-lg'><span className='text-(--primary-color) text-xl font-medium capitalize'>{type}</span> with {name}</h2>
+                <p className='text-sm sm:'>{new Date(date).toLocaleString("en-US", {
+                    dateStyle: "long",
+                    timeStyle: "short"
+                })}</p>
             </div>
         </div>
     );
